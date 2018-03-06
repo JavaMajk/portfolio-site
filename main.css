@@ -1,0 +1,460 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:400,700);
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: #080a10;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+/* ------------------------------------ */
+/* -------------- HEADER -------------- */
+/* ------------------------------------ */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    max-height: 650px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 280px;
+}
+
+.bar {
+    width: 93%;
+    margin-top: 22px;
+    transition: all .6s;
+    min-height: 56px;
+    transition: all 0.8s;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.scrolled_bar {
+    width: 97%;
+    margin-top: 12px;
+    background-color: rgba(74, 1, 126, 0.5);
+    border-radius: 12px;
+    box-shadow: 0px 3px 24px 6px rgba(0, 0, 0, 0.75);
+}
+
+.bar_inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    transition: all 0.5s;
+}
+
+.bar_logo {
+    margin: 0.5em;
+    height: 90px;
+    vertical-align: bottom;
+    transition: all 0.5s;
+}
+
+.scrolled_logo {
+    height: 67px !important;
+}
+
+.bar_logo:hover {
+    transition: all 0.5s;
+    transform: scale(1.1) rotate(6deg);
+}
+
+.bar_title {
+    flex: 1;
+    color: #706975;
+    margin-bottom: 0.2em;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+
+.scrolled_title {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .4s, opacity .3s linear;
+}
+
+.bar_icon {
+    font-size: 62px;
+    margin-bottom: -13px;
+    margin-right: 14px;
+    padding: .1em;
+    text-decoration: none;
+    color: #706975 !important;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.scrolled_icon {
+    color: #8c733f !important;
+    font-size: 54px;
+    margin-right: 0;
+    align-self: flex-start;
+}
+
+.bar_icon:hover {
+    color: #d7db00d0 !important;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: fixed;
+    top: 120px;
+    right: 46px;
+    pointer-events: none;
+    transition: all 1s;
+    z-index: 11;
+}
+
+.dropdown_scrolled {
+    top: 96px;
+    right: 8px;
+}
+
+.dropdown_content {
+    border-radius: 12px;
+    text-align: right;
+    float: right;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0 14px 24px 20px;
+    transition: all 0.3s;
+    box-shadow: 11px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.dropdown_show {
+    pointer-events: all;
+    visibility: visible;
+    transform: translate(-8px);
+    opacity: .95;
+    box-shadow: 11px 8px 16px 0px rgba(0, 0, 0, 0.9);
+    transition: all 1s;
+}
+
+.dropdown_content a {
+    font-weight: 700;
+    font-size: 2em;
+    background-color: #8c733c;
+    color: #212529;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 1.5s;
+}
+
+.dropdown_content a:first-child {
+    border-radius: 12px 12px 0 0;
+}
+
+.dropdown_content a:last-child {
+    border-radius: 0 0 12px 12px;
+}
+
+.dropdown_content a:hover {
+    background-color: #d7db00f3;
+    overflow: hidden;
+}
+
+/* ------------------------------------ */
+/* -------------- INTRO -------------- */
+/* ------------------------------------ */
+
+.intro_hello {
+    text-align: left;
+    line-height: 35.0px;
+    font-size: 22px;
+    margin-bottom: -10px;
+    opacity: 0.9;
+}
+
+.intro {
+    margin-top: 9em;
+    font-size: 28.0px;
+    color: #f4cccc;
+}
+
+.intro_signature {
+    text-align: right;
+    line-height: 35.0px;
+    font-size: 14px;
+    margin: -10px -2px 0 0;
+    opacity: 0.5;
+}
+
+.intro_box {
+    border-radius: 3px;
+    max-width: 440px;
+    min-width: 390px;
+    font-size: 32.0px;
+    padding: 1.0em 1.7em 0.5em 0.5em;
+    margin: 12px;
+    color: #f4cccc;
+    background: linear-gradient(to bottom, rgba(178, 206, 1, 0.5), rgba(115, 133, 0, 0.85));
+    box-shadow: 7px 11px 18px 3px rgba(0, 0, 0, 0.6);
+}
+
+.intro em {
+    color: #212529;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 120vh;
+    background: linear-gradient(to bottom, rgb(36, 0, 60), rgba(0, 0, 0, 0.3)), url(./img/hero-image.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+/* ------------------------------------ */
+/* -------------PORTFOLIO-------------- */
+/* ------------------------------------ */
+
+.portfolio_content {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.portfolio_content .container {
+    margin-top: 12px;
+}
+
+.portfolio_heading h2 {
+    font-size: 3rem;
+    color: #4b017f;
+    text-transform: uppercase;
+}
+
+.portfolio_heading h3 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: #8c733f !important;
+}
+
+.portfolio_item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: 530px;
+    margin: auto auto 2em;
+}
+
+.portfolio_item .caption {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(178, 206, 1, 0.4), rgba(88, 0, 148, 0.8));
+    position: absolute;
+    transition: all 1s;
+    z-index: 2;
+}
+
+.portfolio_item:hover .caption {
+    background-color: rgba(40, 63, 10, 0.577);
+}
+
+.portfolio_item .caption .caption_content {
+    color: #f4cccc;
+    margin: auto 1.6em 1em;
+}
+
+.portfolio_item .caption .caption_content h2 {
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .9s;
+}
+
+.portfolio_item:hover .caption .caption_content h2 {
+    font-size: 2em;
+}
+
+.portfolio_item .caption .caption_content p {
+    font-size: 1.2rem
+}
+
+/* ------------------------------------ */
+/* --------------ABOUT ME-------------- */
+/* ------------------------------------ */
+
+.about_me {
+    padding-bottom: 5.5rem;
+    padding-top: 1rem;
+}
+
+.about_heading h3 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: #8c733f !important;
+}
+.about_heading h2 {
+    font-size: 3rem;
+    color: #4b017f;
+    text-transform: uppercase;
+}
+
+.image_block {
+    display: block;
+    position: relative;
+    max-width: 530px;
+    margin: auto auto 2em;
+}
+
+.image_block .image_filter {
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(178, 206, 1, 0.3), rgba(88, 0, 148, 0.19));
+    height: 300px;
+    width: 300px;
+}
+
+.my_photo {
+    height: 300px;
+    width: 300px;
+    background-color: #ebeaea;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #f4cccc;
+    display: block;
+    position: relative;
+    margin: auto auto 2em;
+}
+
+.description p {
+    text-indent: 20px;
+}
+
+/* ------------------------------------ */
+/* -------------- FOOTER -------------- */
+/* ------------------------------------ */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 8vh;
+    background: linear-gradient(to bottom, rgb(52, 3, 84), rgb(88, 0, 148));
+    color: #f4cccc;
+}
+
+.signature_info {
+    flex: 1;
+    margin-left: 2.3em;
+    font-size: .8em;
+}
+
+.signature_info a {
+    
+    color: lightsteelblue;
+}
+
+.icon {
+    margin-right: 2em;
+    color: #f4cccc;
+}
+
+/* ------------------------------------ */
+/* -------------BREAKPOINTS------------ */
+/* ------------------------------------ */
+
+@media only screen and (max-width:480px) {
+    .header {
+        margin-bottom: 10px;
+    }
+    
+    .bar {
+        width: 94%;
+        padding-top: 0;
+        border-radius: 12px;
+    }
+        
+    .bar_logo {
+        padding: 0em;
+        margin-top: 6px;
+        height: 60px;        
+    }
+    
+    .bar_title {
+        font-size: 1.9em;
+    }
+
+    .bar_icon {
+        font-size: 40px;
+        margin-top: 2px;
+        align-self: flex-start;
+    }
+    
+    .intro {
+        margin-top: 6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        min-width: 300px;
+    }
+
+    .intro_box {
+        min-width: 200px;
+        font-size: 25px;
+    }
+
+    .portfolio_heading h3, .about_heading h3 {
+        font-size: 1.2em;
+    }
+    .portfolio_heading h2, .about_heading h2 {
+        font-size: 2.3rem;
+    }
+
+    .portfolio_item .caption .caption_content {
+        margin: auto 0.2em .2em;
+    }
+
+    .portfolio_item .caption .caption_content p {
+        font-size: 1rem
+    }
+
+
+}
+
+@media only screen and (min-width:992px) {
+    .portfolio_content {
+        padding-left: 92px;
+        padding-right: 70px;
+    }
+
+    .about_me {
+        padding-left: 92px;
+        padding-right: 70px;
+    }
+}
+
+
+@media only screen and (min-width:1945px) {
+    .background {
+        height: 170vh;                 
+    }      
+}

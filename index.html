@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/png" href="img/javamajk-logo-small.png">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaMajk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header" id="top">
+        <div class="bar">
+            <div class="bar_inner">
+                <a href="#top">
+                    <img class="bar_logo" src="img/javamajk-logo-small.png" alt="JavaMajk logo">
+                </a>
+                <h1 class="bar_title">JavaMajk</h1>
+                <a onclick="showDropdown()" id="menu" class="bar_icon drop_btn" data-swap="&#x2718;">&#9776;</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropdown_content" id="my_dropdown">
+                <a href="#top">Intro</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About Me</a>
+            </div>
+        </div>
+
+        <div class="intro animated">
+            <div class="intro_hello">Hello,</div>
+            <div class="intro_box animated fadeInRight">
+                <div class="intro_content">I'm
+                    <em>Michał</em>
+                </div>
+                <div class="intro_content">I was sent to earth
+                    <br>in a human body to
+                    <br>code, create, and design...</div>
+            </div>
+            <div class="intro_signature">DEVELOPER, ARTIST, THINKER</div>
+        </div>
+        <div class=background>
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio_content" id="portfolio">
+            <div class="container">
+                <div class="portfolio_heading text-right">
+                    <h3 class="text-secondary mb-0">Portfolio</h3>
+                    <h2 class="mb-5">Featured Stuff</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a class="portfolio_item" href="https://codepen.io/JavaMajk/pen/jYRGGE" target="_blank">
+                            <div class="caption">
+                                <div class="caption_content">
+                                    <h2>Pixel Art Maker</h2>
+                                    <p class="mb-0">A JavaScript project completed for Udacity Front-End Scholarship Challenge.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/project-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio_item" href="https://vimeo.com/218214994" target="_blank">
+                            <div class="caption">
+                                <div class="caption_content">
+                                    <h2>Nature Sustained</h2>
+                                    <p class="mb-0">Sound design and effects for indormational video about Nature Sustained.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/project-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio_item" href="https://soundcloud.com/mikehess" target="_blank">
+                            <div class="caption">
+                                <div class="caption_content">
+                                    <h2>Mike Hess</h2>
+                                    <p class="mb-0">My alter ego, a musical production and DJ passion. Take a listen!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/project-3.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio_item" href="https://codepen.io/JavaMajk/pen/OQEmKb" target="_blank">
+                            <div class="caption">
+                                <div class="caption_content">
+                                    <h2>Koala Card</h2>
+                                    <p class="mb-0">HTML and CSS project completed for Udacity Front-End Scholarship Challenge.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/project-4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_me" id="about">
+            <div class="container">
+                <div class="about_heading text-left">
+                    <h3 class="text-secondary mb-0">About Me</h3>
+                    <h2 class="mb-3">Who am I?</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="image text-center">
+                            <span class="image_block">
+                                <span class="image_filter rounded-circle">
+                                </span>
+                                <img src="img/my-photo.png" class="my_photo rounded-circle" alt="Photo of me">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="description">
+                            <p>Craft beer mlkshk wolf, pug butcher food truck wayfarers skateboard intelligentsia viral etsy
+                                tattooed. Vegan drinking vinegar kombucha, listicle direct trade tbh post-ironic. Thundercats
+                                subway tile bitters chicharrones meggings yuccie meh hexagon. Bigsaw wolf moon yuccie, af
+                                hell of PBR&B actually sustainable activated charcoal chicharrones literally organic drinking
+                                vinegar. Thundercats subway tile bitters chicharrones meggings yuccie meh hexagon. Wolf moon
+                                yuccie, af hell of PBR&B actually sustainable activated charcoal chicharrones literally organic
+                                drinking vinegar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="signature_info">
+               Code & Design © 2018:
+                <a href="https://github.com/JavaMajk" target="_blank"> JavaMajk</a>
+            </div>
+            <div class="social_icons">
+                <a href="https://twitter.com/JavaMajk" target="_blank" class="icon">
+                    <i class="fab fa-twitter fa-2x"> </i>
+                </a>
+                <a href="https://www.instagram.com/mikehess_/" target="_blank" class="icon">
+                    <i class="fab fa-instagram fa-2x"> </i>
+                </a>
+                <a href="https://github.com/JavaMajk" target="_blank" class="icon">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
+
+        </footer>
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
